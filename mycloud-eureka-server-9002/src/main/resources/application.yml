@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: mycloud-eureka-server-9002
+
+server:
+  port: 9002
+
+eureka:
+  instance:
+    hostname: eureka03.com
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://eureka01.com:9000/eureka/,http://eureka02.com:9001/eureka/
