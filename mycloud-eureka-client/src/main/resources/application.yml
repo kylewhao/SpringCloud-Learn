@@ -1,12 +1,33 @@
 server:
   port: 9010
 
-spring:
-  application:
-    name: mycloud-eureka-client
-
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:9000/eureka/
+
+spring:
+  application:
+    name: mycloud-eureka-client
+  datasource:
+    dynamic:
+      primary: master
+      datasource:
+        master:
+          username: root
+          password: 123456
+          driver-class-name: com.mysql.jdbc.Driver
+          url: jdbc:mysql://localhost:3306/springcloud-learn-main
+        slave01:
+          username: root
+          password: 123456
+          driver-class-name: com.mysql.jdbc.Driver
+          url: jdbc:mysql://localhost:3307/springcloud-learn-slave01
+        slave02:
+          username: root
+          password: 123456
+          driver-class-name: com.mysql.jdbc.Driver
+          url: jdbc:mysql://localhost:3307/springcloud-learn-slave02
+
+
 
