@@ -5,9 +5,9 @@ package com.kylewh.mycloudeurekaclient.constant;
  */
 public interface DataSourceConstant {
 
-    String DS_MASTER = "master";
-    String DS_SLAVE01 = "slave01";
-    String DS_SLAVE02 = "slave02";
+    String DS_MASTER = "springcloud01";
+    String DS_SLAVE01 = "springcloud02";
+    String DS_SLAVE02 = "springcloud03";
 
 
 

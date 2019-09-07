@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
  * @author kylewhao
  */
 @Service
-@DS(DataSourceConstant.DS_MASTER)
 public class WorkerServiceImpl extends ServiceImpl<WorkerMapper, Worker> implements WorkerService {
 
 }
